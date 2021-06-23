@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <!--Teachble project link down-->
+    <!--https://teachablemachine.withgoogle.com/models/jWkdev1PB/-->
+    <head>
+        <title>Hand Gesture App</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="htttps://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudfare/ajax/libs/webcam.js/1.0.26/webcam.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h3 class="btn btn-info" id="gesture">
+                    GESTURE WEB APP
+                    <br>
+                    <span>&#9994;</span>
+                    <span>&#9995;</span>
+                    <span>&#9996;</span>
+                    <span>&#128074;</span>
+                    <span>&#128075;</span>
+                    <span>&#128076;</span>
+                </h3>
+                <br><br>
+                <label id="lab1">Take a selfie of a gesture to know its meaning.</label>
+                <p>
+                    The model is trained to identify these gestures:-
+                    <br>
+                    <span>&#128077;</span> <!--All The best-->
+                    <span>&#128076;</span> <!--Super-->
+                    <span>&#9996;</span> <!--Victory-->
+                    <span>&#128588;</span> <!--Love-->
+                    <span>&#128075;</span> <!--Bye-->
+                    <span>&#128079;</span> <!--Clap-->
+                    <span>&#128074;</span> <!--Punch-->
+                </p>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label>Webcam View - </label>
+                    <div class="camera" id="camera"></div>
+                    <br><br>
+                    <button class="btn btn-danger">Take Selfie</button>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label id="predict">Prediction</label>
+                    <p id="name"></p>
+                    <p id="emoji"></p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label>Snapshot View - </label>
+                    <div class="snap" id="snap"></div>
+                    <br><br>
+                    <button class="btn btn-success">Predict Gesture</button>
+                </div>
+            </center>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

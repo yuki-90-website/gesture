@@ -1,0 +1,25 @@
+body {
+    background-color: magenta;
+}
+#gesture {
+    letter-spacing: 10px;
+}
+#lab1 {
+    font-size: 20px;
+}
+.camera {
+    height: 240px;
+    width: 240px;
+    border-style: dashed;
+}
+.snap {
+    height: 240px;
+    width: 240px;
+    border-style: dashed;
+}
+#predict {
+    background-color: white;
+    width: 25%;
+    border-radius: 7px;
+    color: green;
+}
